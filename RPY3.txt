@@ -20,7 +20,7 @@
 }
 
  if (n >= 1000) {
-    first_R <-　first_R/1000
+ first_R <-　first_R/1000
  first_P <- first_P/1000
  first_Y <- first_Y/1000
   while (i > 0 ) {
