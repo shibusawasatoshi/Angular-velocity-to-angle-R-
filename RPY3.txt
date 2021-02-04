@@ -1,5 +1,5 @@
  options(digits=10)
- df <- read.csv("/Users/shibusawasatoshi/Desktop/データとか/sensor (2).csv",header=T,fileEncoding="CP932")
+ df <- read.csv("csvファイル名",header=T,fileEncoding="CP932")
  R <- 0
  P <- 0
  Y <- 0
