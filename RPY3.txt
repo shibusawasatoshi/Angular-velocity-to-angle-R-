@@ -12,9 +12,9 @@
  x <- 1
  n <- 1
   while (n < 1000 ) {
- first_R <-　(first_R + df[n,1])/1000
- first_P < (first_P + df[n,2])/1000
- first_Y < (first_Y + df[n,3])/1000
+ first_R <-　(first_R + df[n,1])
+ first_P < (first_P + df[n,2])
+ first_Y < (first_Y + df[n,3])
   n <- n+1
 }
  if (n >= 1000) {
