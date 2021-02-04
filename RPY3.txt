@@ -1,4 +1,4 @@
- df <- read.csv("角速度が入っているcsvファイル名",header=T,fileEncoding="CP932")
+ df <- read.csv("/Users/shibusawasatoshi/Desktop/データとか/sensor (2).csv",header=T,fileEncoding="CP932")
  R <- 0
  P <- 0
  Y <- 0
@@ -11,13 +11,13 @@
  i <- 4050　#衝突時までのデータ量
  x <- 1
  n <- 1
-  while (n > 1000 ) {
+  while (n < 1000 ) {
  first_R <-　(first_R + df[n,1])/1000
  first_P < (first_P + df[n,2])/1000
  first_Y < (first_Y + df[n,3])/1000
   n <- n+1
 }
- if (n>1000) {
+ if (n >= 1000) {
   while (i > 0 ) {
    R <- ((1*(df[x,1]-first_R)) + (sin(R)*sin(P)/cos(P)*(df[x,2]-first_P))+ (cos(R)*sin(P)/cos(P)*(df[x,3]-first_Y)))/1000
    P <- ((0*(df[x,1]-first_R))+ (cos(R)*(df[x,2]-first_P))+ (-sin(R)*(df[x,3]-first_Y)))/1000
